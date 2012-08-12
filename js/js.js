@@ -28,6 +28,13 @@ jQuery.fn.highlight = function() {
 	});
 }
 
+jQuery.fn.scrollPath("getPath", {scrollSpeed: 30,rotationSpeed: Math.PI / 10})
+		.moveTo(400, 0, {name: "first"})
+		.lineTo(400, 200, {name: "second"})
+		.lineTo(400, 400, {name: "third"})
+		.arc(900, 600, 500, Math.PI, Math.PI/2, true,{rotate: Math.PI/2, name: "fourth" })
+		.lineTo(2000, 1100, {name: "fifth"});
+
 $(function() {
 
 	function ordinal(num) {
@@ -38,7 +45,19 @@ $(function() {
 		);
 	}
 
-	$('h1');
-
+		// We're done with the path, let's initate the plugin on our wrapper element
+		$(".wrapper").scrollPath({drawPath: true, wrapAround: true});
+		
+		// Add scrollTo on click on the navigation anchors
+	$("nav a").each(function() {
+		var $$ = $(this);
+		var target = $$.attr("href").replace("#", "");
+		$$.click(function(e) {
+			e.preventDefault();
+			console.log('clicked '+target);
+			$.fn.scrollPath("scrollTo", target, 1000, "easeInOutSine");
+		});
+	});
+		
 });
 

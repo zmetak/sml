@@ -1,0 +1,174 @@
+/*
+	HYPE studio s.r.o.
+	http://hypestudio.sk
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+hgroup,
+menu,
+footer,
+header,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+a img {
+  border: 0;
+}
+body {
+  font-size: 62.5%;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+.gigantic {
+  font-size: 11.0em;
+  line-height: 2;
+  letter-spacing: -0.2em;
+}
+.huge,
+h1 {
+  font-size: 6.8em;
+  line-height: 2;
+  letter-spacing: -0.1em;
+}
+.large,
+h2 {
+  font-size: 4.2em;
+  line-height: 2;
+}
+.bigger,
+h3 {
+  font-size: 2.6em;
+  line-height: 2;
+}
+.big,
+h4 {
+  font-size: 2.2em;
+  line-height: 2;
+}
+.small,
+small {
+  font-size: 1.3em;
+  line-height: 2;
+}
+::selection {
+  background: #ffff9e;
+}
+::-moz-selection {
+  background: #ffff9e;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  -webkit-tap-highlight-color: #ffff9e;
+}
+.w33 {
+  float: left;
+  width: 33%;
+}
+.ribbon,
+.gmap {
+  float: left;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .ribbon,
+  .gmap {
+    color: red;
+  }
+}
+@media only screen and (min-width: 321px) {
+  .ribbon,
+  .gmap {
+    color: red;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .ribbon,
+  .gmap {
+    color: red;
+  }
+}
